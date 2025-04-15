@@ -1,5 +1,5 @@
-streamlit==1.17.0
-numpy==1.21.0
-pillow==8.4.0
-opencv-python==4.5.3.56
-stegano-dwt==0.1.0
+streamlit
+opencv-python
+pywavelets
+pillow
+numpy
