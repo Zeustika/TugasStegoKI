@@ -1,76 +1,71 @@
-# StegaVision DWT - Steganografi dengan Discrete Wavelet Transform
+# StegaVision DWT - Steganography Using Discrete Wavelet Transform
 
-## Deskripsi
-**StegaVision DWT** adalah aplikasi steganografi yang menggunakan metode **Discrete Wavelet Transform (DWT)** untuk menyisipkan dan mengekstrak pesan rahasia di dalam gambar. Aplikasi ini memungkinkan pengguna untuk meng-encode pesan ke dalam gambar dan mendekode pesan tersebut menggunakan algoritma berbasis DWT. Steganografi adalah teknik untuk menyembunyikan informasi dalam bentuk yang tidak mudah terdeteksi oleh pihak ketiga.
+## Description
+**StegaVision DWT** is a steganography application that uses the **Discrete Wavelet Transform (DWT)** method to embed and extract secret messages within images. This app allows users to encode a message into an image and decode it using a DWT-based algorithm. Steganography is a technique for hiding information in a way that is not easily detectable by third parties.
 
-### Fitur Utama:
-- **Encode Pesan:** Sisipkan pesan rahasia ke dalam gambar PNG/JPG menggunakan DWT.
-- **Decode Pesan:** Ekstrak pesan yang tersembunyi dari gambar stego.
-- **Keamanan:** Pengguna dapat menambahkan password opsional untuk keamanan ekstra dalam proses encoding dan decoding.
-- **Antarmuka Pengguna:** Antarmuka yang mudah digunakan dengan Streamlit untuk pengalaman interaktif yang baik.
+### Key Features:
+- **Message Encoding:** Embed secret messages into PNG/JPG images using DWT.
+- **Message Decoding:** Extract hidden messages from stego images.
+- **Security:** Users can optionally add a password for extra security during encoding and decoding.
+- **User Interface:** Easy-to-use UI built with Streamlit for a smooth interactive experience.
 
-## Prasyarat
-Aplikasi ini membutuhkan beberapa paket Python untuk menjalankan fungsionalitas steganografi dan antarmuka pengguna:
+## Requirements
+This app requires several Python packages to function properly for both steganography and user interface:
 
-- `streamlit`: Untuk antarmuka pengguna web.
-- `numpy`: Untuk komputasi numerik.
-- `opencv-python`: Untuk manipulasi gambar.
-- `Pillow`: Untuk pembacaan dan penulisan gambar.
-- `stegano-dwt`: Modul untuk implementasi steganografi berbasis DWT.
+- `streamlit`: For the web-based user interface.
+- `numpy`: For numerical computations.
+- `opencv-python`: For image processing.
+- `Pillow`: For image reading and writing.
+- `stegano-dwt`: Module for DWT-based steganography implementation.
 
-## Cara Menggunakan
+## How to Use
 
-### Encode Pesan:
-1. Pilih gambar cover (PNG/JPG) yang ingin Anda gunakan untuk menyisipkan pesan.
-2. Masukkan pesan rahasia yang ingin Anda sembunyikan.
-3. Pilih opsi untuk menambahkan password (opsional) untuk lapisan keamanan tambahan.
-4. Klik tombol "🚀 Encode Pesan" untuk menyisipkan pesan.
-5. Gambar hasil dengan pesan tersembunyi (stego image) akan ditampilkan. Anda dapat mengunduh gambar tersebut.
+### Encoding a Message:
+1. Select a cover image (PNG/JPG) where you want to hide the message.
+2. Enter the secret message you want to embed.
+3. Optionally, set a password for additional security.
+4. Click the "🚀 Encode Message" button to embed the message.
+5. The resulting image with the hidden message (stego image) will be displayed, and you can download it.
 
-### Decode Pesan:
-1. Pilih gambar stego yang berisi pesan rahasia.
-2. Masukkan password jika ada.
-3. Klik tombol "🕵️‍♂️ Ekstrak Pesan" untuk mengekstrak pesan rahasia dari gambar stego.
-4. Pesan yang berhasil diekstrak akan ditampilkan di aplikasi.
+### Decoding a Message:
+1. Select the stego image that contains the hidden message.
+2. Enter the password if one was set.
+3. Click the "🕵️‍♂️ Extract Message" button to reveal the hidden message.
+4. The extracted message will be displayed in the app.
 
-## Instalasi
+## Installation
 
-1. Clone repositori ini ke dalam komputer Anda:
-   ```bash
-   git clone https://github.com/Zeustika/StegaVision-DWT.git
-
-
-1. Clone repositori ini ke dalam komputer Anda:
+1. Clone this repository to your local machine:
    ```bash
    git clone https://github.com/Zeustika/StegaVision-DWT.git
    ```
-   
-2. Masuk ke direktori proyek:
+
+2. Navigate to the project directory:
    ```bash
    cd StegaVision-DWT
    ```
-   
-3. Instal dependensi yang diperlukan:
+
+3. Install the required dependencies:
    ```bash
    pip install -r requirements.txt
    ```
 
-4. Jalankan aplikasi Streamlit:
+4. Run the Streamlit app:
    ```bash
    streamlit run app.py
    ```
 
-Aplikasi akan terbuka di browser Anda.
+The app will open in your default browser.
 
-## Struktur Proyek
+## Project Structure
 ```
 StegaVision-DWT/
 │
-├── app.py              # Aplikasi utama Streamlit
-├── requirements.txt    # Daftar dependensi Python
-├── .gitignore          # File untuk mengabaikan file yang tidak perlu di Git
-└── README.md           # File ini
+├── app.py              # Main Streamlit app
+├── requirements.txt    # List of Python dependencies
+├── .gitignore          # Ignore unnecessary files in Git
+└── README.md           # This file
 ```
 
-## Kontribusi
-Jika Anda ingin berkontribusi pada proyek ini, silakan buat **fork** repositori ini, lakukan perubahan, dan buat **pull request**. Kami akan meninjau dan mempertimbangkan kontribusi Anda.
+## Contribution
+If you'd like to contribute to this project, feel free to **fork** the repository, make your changes, and create a **pull request**. We’ll review and consider your contribution.
